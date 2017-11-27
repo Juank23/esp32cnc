@@ -5,6 +5,11 @@
 */
 
 // the setup function runs once when you press reset or power the board
+#include <WiFiMulti.h>
+#include <WiFi.h>
+#include <inttypes.h>
+#include <esp32-hal-gpio.h>
+
 void setup() {
 
 }
