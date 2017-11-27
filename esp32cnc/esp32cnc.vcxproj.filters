@@ -17,5 +17,9 @@
   <ItemGroup>
     <None Include="esp32cnc.ino" />
   </ItemGroup>
- 
+  <ItemGroup>
+    <ClInclude Include="__vm\.esp32cnc.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
