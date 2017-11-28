@@ -21,49 +21,55 @@
     <ClInclude Include="__vm\.esp32cnc.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="grbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grbleeprom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="coolant_control.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cpu_map.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="defaults.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="eeprom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="grbl.h">
+    <ClInclude Include="nuts_bolts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="jog.h">
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="limits.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="motion_control.h">
+    <ClInclude Include="defaults.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="nuts_bolts.h">
+    <ClInclude Include="motion_control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="planner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="print.h">
+    <ClInclude Include="system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pin_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="coolant_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="probe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="protocol.h">
+    <ClInclude Include="print.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="report.h">
@@ -72,72 +78,63 @@
     <ClInclude Include="serial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="settings.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="spindle_control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stepper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="system.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="coolant_control.c">
+    <ClCompile Include="grbleeprom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="eeprom.c">
+    <ClCompile Include="gcode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gcode.c">
+    <ClCompile Include="nuts_bolts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="jog.c">
+    <ClCompile Include="settings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="limits.c">
+    <ClCompile Include="protocol.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="motion_control.c">
+    <ClCompile Include="limits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="nuts_bolts.c">
+    <ClCompile Include="motion_control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="planner.c">
+    <ClCompile Include="planner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="print.c">
+    <ClCompile Include="system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="probe.c">
+    <ClCompile Include="coolant_control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="protocol.c">
+    <ClCompile Include="jog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="report.c">
+    <ClCompile Include="probe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="serial.c">
+    <ClCompile Include="print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="settings.c">
+    <ClCompile Include="report.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="spindle_control.c">
+    <ClCompile Include="serial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stepper.c">
+    <ClCompile Include="spindle_control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="system.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="maintask.c">
+    <ClCompile Include="stepper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

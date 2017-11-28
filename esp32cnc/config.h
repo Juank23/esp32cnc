@@ -1,22 +1,22 @@
 /*
-  config.h - compile time configuration
-  Part of Grbl
+config.h - compile time configuration
+Part of Grbl
 
-  Copyright (c) 2012-2016 Sungeun K. Jeon for Gnea Research LLC
-  Copyright (c) 2009-2011 Simen Svale Skogsrud
+Copyright (c) 2012-2016 Sungeun K. Jeon for Gnea Research LLC
+Copyright (c) 2009-2011 Simen Svale Skogsrud
 
-  Grbl is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version.
+Grbl is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-  Grbl is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+Grbl is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 // This file contains compile-time configurations for Grbl's internal system. For the most part,
@@ -35,7 +35,8 @@
 // one configuration file by placing their specific defaults and pin map at the bottom of this file.
 // If doing so, simply comment out these two defines and see instructions below.
 #define DEFAULTS_GENERIC
-#define CPU_MAP_ATMEGA328P // Arduino Uno CPU
+//#define CPU_MAP_ATMEGA328P // Arduino Uno CPU
+#define CPU_MAP_ESP32
 
 // Serial baud rate
 // #define BAUD_RATE 230400
@@ -569,7 +570,7 @@
 #define PARKING_RATE 500.0 // Parking fast rate after pull-out in mm/min.
 #define PARKING_PULLOUT_RATE 100.0 // Pull-out/plunge slow feed rate in mm/min.
 #define PARKING_PULLOUT_INCREMENT 5.0 // Spindle pull-out and plunge distance in mm. Incremental distance.
-                                      // Must be positive value or equal to zero.
+// Must be positive value or equal to zero.
 
 // Enables a special set of M-code commands that enables and disables the parking motion. 
 // These are controlled by `M56`, `M56 P1`, or `M56 Px` to enable and `M56 P0` to disable. 
@@ -612,12 +613,12 @@
 
 
 /* ---------------------------------------------------------------------------------------
-   OEM Single File Configuration Option
+OEM Single File Configuration Option
 
-   Instructions: Paste the cpu_map and default setting definitions below without an enclosing
-   #ifdef. Comment out the CPU_MAP_xxx and DEFAULT_xxx defines at the top of this file, and
-   the compiler will ignore the contents of defaults.h and cpu_map.h and use the definitions
-   below.
+Instructions: Paste the cpu_map and default setting definitions below without an enclosing
+#ifdef. Comment out the CPU_MAP_xxx and DEFAULT_xxx defines at the top of this file, and
+the compiler will ignore the contents of defaults.h and cpu_map.h and use the definitions
+below.
 */
 
 // Paste CPU_MAP definitions here.
@@ -626,3 +627,5 @@
 
 
 #endif
+
+

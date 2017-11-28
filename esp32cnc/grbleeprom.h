@@ -1,8 +1,7 @@
 /*
-limits.h - code pertaining to limit-switches and performing the homing cycle
+eeprom.h - EEPROM methods
 Part of Grbl
 
-Copyright (c) 2012-2016 Sungeun K. Jeon for Gnea Research LLC
 Copyright (c) 2009-2011 Simen Svale Skogsrud
 
 Grbl is free software: you can redistribute it and/or modify
@@ -17,27 +16,16 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
+
+file renamed to avoid conflict with the esp32 EEPROM.h
 */
 
-#ifndef limits_h
-#define limits_h
+#ifndef eeprom_h
+#define eeprom_h
 
-#include "grbl.h"
-
-// Initialize the limits module
-void limits_init();
-
-// Disables hard limits.
-void limits_disable();
-
-// Returns limit state as a bit-wise uint8 variable.
-uint8_t limits_get_state();
-
-// Perform one portion of the homing cycle based on the input settings.
-void limits_go_home(uint8_t cycle_mask);
-
-// Check for soft limit violations
-void limits_soft_check(float *target);
+unsigned char eeprom_get_char(unsigned int addr);
+void eeprom_put_char(unsigned int addr, unsigned char new_value);
+void memcpy_to_eeprom_with_checksum(unsigned int destination, char *source, unsigned int size);
+int memcpy_from_eeprom_with_checksum(char *destination, unsigned int source, unsigned int size);
 
 #endif
-

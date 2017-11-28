@@ -5,6 +5,25 @@
 */
 
 // the setup function runs once when you press reset or power the board
+
+#include "print.h"
+#include "probe.h"
+#include "jog.h"
+#include "coolant_control.h"
+#include "pin_map.h"
+#include "config.h"
+#include "planner.h"
+#include "motion_control.h"
+#include "defaults.h"
+#include "limits.h"
+#include "protocol.h"
+#include "settings.h"
+#include "nuts_bolts.h"
+#include "gcode.h"
+#include "config.h"
+#include "grbl.h"
+#include "eeprom.h"
+#include <EEPROM.h>
 #include <WiFiMulti.h>
 #include <WiFi.h>
 #include <inttypes.h>
